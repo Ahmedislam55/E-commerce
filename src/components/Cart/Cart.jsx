@@ -320,7 +320,7 @@ function Cart() {
                     )}
                   </tbody>
                 </table>
-                <div className="flex justify-evenly">
+                <div className="flex md:justify-between justify-evenly">
                   <Link to="/checkout">
                     <button className="btn font-mono my-4 bg-main py-2 w-24 hover:text-main hover:bg-transparent hover:border border-main transation duration-700 rounded border-0 text-white">
                       Check Out
