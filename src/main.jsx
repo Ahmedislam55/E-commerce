@@ -12,7 +12,7 @@ import CartContextProvider from "./components/Context/CartContext.jsx";
 import GetCategoriesContextProvider from "./components/Context/CategoriesContext.jsx";
 import BrandsContextProvider from "./components/Context/BrandsContextProvider.jsx";
 import SubCategoriesProvider from "./components/Context/SubCategoriesProvider.jsx";
-import WishlistContextProvider from "./components/Context/wishlistContextProvider.jsx";
+import WishlistContextProvider from "./components/Context/WishlistContextProvider.jsx";
 createRoot(document.getElementById("root")).render(
   <TokenContextProvider>
     <CartContextProvider>
