@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:segoe ui light;
+    --rating-color:#ffc908;
+}
+.active {
+  color: white;
+  background-color: #0aad0a;
+}
+body{
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x:hidden;
+    font-weight: 600;    
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.container
+{
+    max-width: 1400px;
+    margin: auto;
+}
+.main
+{
+    @apply flex flex-wrap justify-center items-center;
+}
+.slick-dots li.slick-active div {
+  @apply bg-main scale-125;
+}
